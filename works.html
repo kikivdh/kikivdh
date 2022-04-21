@@ -1,165 +1,202 @@
-<html>
-<head>
-<style>
-
-body {
-background-color:#100855;
-padding: 20px;
-margin-left: 200px;
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+ 
+ body {
+  background:rgb(12, 12, 12);
+  background-image:url("https://d2w9rnfcy7mm78.cloudfront.net/15928745/original_6c4a4f73f447287410cac7f3ca76bdf6.jpg?1649190743?bc=0") ;
+  background-size:inherit;
+  background-position: relative;
 }
 
-p {
-   color:#e8f9fa;
-   font-size: 90%;
-   text-align: left;
-   text-decoration: none;
-   line-height: 50px;
-  font-family: 'Courier New', Courier, monospace;
-   letter-spacing:1px;
-   margin-left: 10px;
+a {
+    padding: 20px;
+  padding-top: 2em;
+  caption-side: bottom;
+  text-decoration: none;
+  text-align: left;
+  font-family: "gerstner_programm_regular", sans-serif;
+  font-size: 14px;
+  line-height: 2.2;
+  letter-spacing: 0.5em;
+  color: white;
+}
 
-   }
-	
-p2 {
-   color:yellow;
-   font-size:90%;
-   text-align: left;
-   text-decoration: none;
-   line-height: 50px;
-  font-family: 'Courier New', Courier, monospace;
-   letter-spacing:1px;
-   margin-left: 10px;
-	padding:20px;
+a:hover{
+    padding: 20px;
+  padding-top: 2em;
+  caption-side: bottom;
+  text-align: left;
+  text-decoration:line-through;
+  font-family: "gerstner_programm_regular", sans-serif;
+  font-size: 14px;
+  line-height: 2.2;
+  letter-spacing: 0.5em;
+  color: white;
 
-   }	
-	
-	
-p3 {
-   color:cornsilk;
-   font-size:80%;
-   text-align: left;
-   text-decoration: none;
-   line-height: 50px;
-  font-family: 'Courier New', Courier, monospace;
-   letter-spacing:1px;
-   margin-left: 10px;
-	padding:20px;
+}
 
-   }	
-	
-	
-   
-   h1 {
-   color: #000f14;
-   font-size: 100%;
-   font-family: courier;
+
+h1 {
+    padding: 20px;
+  padding-top: 2em;
+  caption-side: bottom;
+  margin-left: 400px;
+  text-align: left ;
+  font-family: "gerstner_programm_regular", sans-serif;
+  font-size: 14px;
+  line-height: 2.2;
+  letter-spacing: 0.5em;
+  color: white;
+	 }
+
+h2 {
+   color:rgb(5, 5, 5);
+   font-size: 200%;
+   font-family:serif;
    text-align: center;
-   line-height: 50px;
+   line-height: 90px;
    margin: auto;
-     letter-spacing: 3px;
-	 
-   }
-   
-   h2 {
-   color:linen;
-   font-size: 95%;
-   font-family: courier;
-   text-align: left;
-   line-height: 30px;
-   margin: auto;
-   }
-
-
-   #grad1 {
-  background-image: linear-gradient(rgb(156, 78, 33),#100855);
-  height: 700px;
-  width:1050px;
-
-
-}
-   
-   
-   a {
-  
-color:#e8f9fa;
-   text-align: left;
-   font-family: courier;
-   line-height: 10px;
-   margin: auto;
-   letter-spacing: 5px;
-   margin-left: 10px;
-   text-decoration: none;
-   
-}
-	
-	 a:hover {
-   color:#e8f9fa;
-    text-shadow: 2px 2px 5px white;
-   
-}
-
-
-ul {
- list-style-position: outside;
- list-style-type: none;
-  background:#2e002c;
-  padding: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-family: courier;
-  
-   text-align: left;
-   line-height: 40px; 
    letter-spacing: 10px;
+	 }
+
+div.scroll {
+  margin: 8px 8px;
+  padding: 8px;
+  background-color:linen;
+  width: 600px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap; 
+}
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(141deg, #829A8D 0%, #88ABA5 51%, #4682B4 75%); 
+  border-radius:2px;
   
 }
-ul li {
-  background: #597694;
-  margin: 5px;
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: indigo; 
 }
 
-     .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: rgb(12, 2, 2);
+  background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/15926685/original_ba3335c23d9513ef5e1a1ba76ef34149.gif?1649182474?bc=0");
+  background-position: center;
+ 
+  background-size:cover;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(12, 2, 2);
+  background-size: 1700px ;
+ 
+  background-position:center;
+
+  text-align: left;
+
+  background-repeat: no-repeat;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+span.flash {
+    background-color: rgb(15, 2, 2);
+}
+
+ 
+ 
+ </style>
+
+
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>C v d H</title>
+    
+   
+    <link rel="stylesheet" href="/style.css">
+    
+    
+  </head>  
+  <body>
+    
+    
+   <br><br><h1>
+      <div class= "centered">
+   <span style= "background-color: rgb(39, 29, 79);">    on tech and poetics     </span>
+      </h1>
+   </div>
+   <br> 
+
+   <h1>
+      <span style= "background-color: black;"><a href= "works.html">Selected Works</a></span>
+      </h1>
+
+  <h1>
+   <span style= "background-color: black;"> <a href= "notes.html">Notes, Research</a></span>
+   </h1>
+
+
+   <h1>
+      <span style= "background-color: black;"><a href="mailto:c.vdenhoven@gmail.com">Contact</span></span>
+      </h1>
   
-  
 
-
-</style>
-</head>
-
-<body>
-    <br><br><br>
-    <br><br><br>
-
-    <div id="grad1">
-        
-	    <br><br><br>
-    <br><br><br><br><br><br>
-    <br><br><br>
-	    <p2 style>incoming ;)
-		    
-		<br><br>  
-	  </p2>
-  
-  
-     
-
-
-    </div>
-
-
-<br><br>
- <br><br><br>
-
-
-
-
-
-
-
-</body>
-
+  </div>  
+    
+  </body>
 </html>
+
