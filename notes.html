@@ -1,255 +1,217 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+ 
+ body {
+  background:rgb(255, 255, 255);
+  
+  background-size:cover;
+  background-position:fixed;
+}
 
-<style>
+a {
+    padding: 20px;
+  padding-top: 2em;
+  caption-side: bottom;
+  text-decoration: none;
+  text-align: left;
+  font-family: "gerstner_programm_regular", sans-serif;
+  font-size: 16px;
+  line-height: 2.2;
+ 
+  color: rgb(3, 3, 3);
+}
 
-body {
-background-color:#100855;
-padding: 20px;
-margin-left: 200px;
+a:hover{
+    padding: 20px;
+  padding-top: 2em;
+  caption-side: bottom;
+  text-align: left;
+  text-decoration:line-through;
+  font-family: "gerstner_programm_regular", sans-serif;
+  font-size: 16px;
+  line-height: 2.2;
+
+  color: rgb(176, 30, 30);
+
 }
 
 p {
-   color:#e8f9fa;
-   font-size: 90%;
+    padding:5px;
+  padding-top: 0em;
+  caption-side: bottom;
+  margin-left: 400px;
+  text-decoration: italic;
+  text-align: left ;
+  font-family: "gerstner_programm_regular", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.2em;
+  color: rgb(0, 0, 0);
+	 }
+
+h1 {
+    padding: 20px;
+  padding-top: 2em;
+  caption-side: bottom;
+  margin-left: 400px;
+  text-align: left ;
+  font-family: "gerstner_programm_regular", sans-serif;
+  font-size: 20px;
+  line-height: 2.2;
+  letter-spacing: 0.2em;
+  color: rgb(0, 0, 0);
+	 }
+
+h2 {
+   color:rgb(5, 5, 5);
+   letter-spacing: 0.5em;
+   font-size: 14px;
+   font-family: "gerstner_programm_regular", sans-serif;
    text-align: left;
-   text-decoration: none;
-   line-height: 50px;
-  font-family: 'Courier New', Courier, monospace;
-   letter-spacing:1px;
-   margin-left: 10px;
-
-   }
-	
-p2 {
-   color:yellow;
-   font-size:90%;
-   text-align: left;
-   text-decoration: none;
-   line-height: 50px;
-  font-family: 'Courier New', Courier, monospace;
-   letter-spacing:1px;
-   margin-left: 10px;
-	padding:20px;
-
-   }	
-	
-	
-p3 {
-   color:cornsilk;
-   font-size:80%;
-   text-align: left;
-   text-decoration: none;
-   line-height: 50px;
-  font-family: 'Courier New', Courier, monospace;
-   letter-spacing:1px;
-   margin-left: 10px;
-	padding:20px;
-
-   }	
-	
-	
-   
-   h1 {
-   color: #000f14;
-   font-size: 100%;
-   font-family: courier;
-   text-align: center;
-   line-height: 50px;
+   line-height: 90px;
    margin: auto;
-     letter-spacing: 3px;
-	 
-   }
    
-   h2 {
-   color:cyan;
-   font-size: 100%;
-   font-family: courier;
-   text-align: center;
-   line-height: 50px;
-   margin: auto;
-     letter-spacing: 3px;
-	 
-   }
-	
-	  h3 {
-   color:#e8f9fa;
-   font-size: 70%;
-   font-family: courier;
-   text-align: center;
-   line-height: 50px;
-   margin: auto;
-     letter-spacing: 3px;
-text-decoration: italic;
-	 
-   }
+	 }
 
 
-   #grad1 {
-  background-image: linear-gradient(rgb(156, 78, 33),#100855);
-  height: 800px;
-  width:1050px;
-
-
-}
-   
-   
-   a {
-  
-color:#e8f9fa;
-   text-align: left;
-   font-family: courier;
-   line-height: 10px;
-   margin: auto;
-   letter-spacing: 5px;
-   margin-left: 10px;
-   text-decoration: none;
-   
-}
-	
-	 a:hover {
-   color:#e8f9fa;
-    text-shadow: 2px 2px 5px white;
-   
+div.scroll {
+  margin: 8px 8px;
+  padding: 8px;
+  background-color:linen;
+  width: 600px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap; 
 }
 
 
-ul {
- list-style-position: outside;
- list-style-type: none;
-  background:#2e002c;
-  padding: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-family: courier;
-  
-   text-align: left;
-   line-height: 40px; 
-   letter-spacing: 10px;
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(141deg, #829A8D 0%, #88ABA5 51%, #4682B4 75%); 
+  border-radius:2px;
   
 }
-ul li {
-  background: #597694;
-  margin: 5px;
-}
 
-     .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  }
-	
-	
-	
-	hr {
-  display:block;
 
-  margin-left: auto;
-  margin-right: auto;
-  border-style:dashed;
-  border-width: 1px;
-  border-color:rgb(151, 2, 2);
+::-webkit-scrollbar-thumb:hover {
+  background: indigo; 
 }
 
 
 
-</style>
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-<body>
-    <br><br><br>
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: rgb(12, 2, 2);
+  background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/15928745/original_6c4a4f73f447287410cac7f3ca76bdf6.jpg?1649190743?bc=0");
+  background-position: center;
+ 
+  background-size:cover;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(12, 2, 2);
+  background-size: 1700px ;
+ 
+  background-position:center;
+
+  text-align: left;
+
+  background-repeat: no-repeat;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+ 
+ 
+ </style>
+
+
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>C v d H</title>
+    
+   
+    <link rel="stylesheet" href="/style.css">
+    
+    
+  </head>  
+  <body>
+    
+   
+    
+<br>
+
+   <h2>
+    <span style= "background-color: rgb(243, 253, 108);"><a href = "works.html">back</a></span>
+       </h2>
+     
+  
+
+
+
     <br>
-	<p2><img src="yellow herondelle.svg"style="width:150px;height:auto;">coding experiments and digital research:</p2>
-	<br><br><br><br>
-	    <br><br><br>
+    <h1><span style= "background-color: rgb(198, 213, 226);">Digital Sketchbooks</span></h1>
+    <br> 
 
-    <div id="grad1">
-        
-	    <br><br><br>    
-	    
-	    <h2>current projects (2021)</h2>
-	    
-	    <br>   <br>    
-	    <br>   <br>
-	    
-	    
-	    
-	    
-	    
-	    <h2>
-	    <a href = "https://scoby.page/bulbs-love-lighthouses-nets">
-		
-		
-			<span style="border: 3px solid #70B3E2; padding: 20px; box-shadow: 5px 5px 10px #70B3E2; color:#70B3E2;"><i>stream 01</i></span>
-		       
-       
-	    </a>
-	    </h2>
-	    
-	     <br>   <br>
-	    <h3>thinking about: maritime signals, kites, and nets...</h3>
-	    
-	    
-	    <br><br>
-	    
-	    
-	    
-	     <br>   <br>    
-	     <br>   <br>
-	    
-	    <h2>
-	    <a href = "https://scoby.page/amnesiac">
-		
-		
-			<span style="border: 3px solid crimson; padding: 20px; box-shadow: 5px 5px 10px crimson; color:crimson;"><i>stream 02</i></span>
-		       
-       
-	    </a>
-	    </h2>
-	    
-	     <br>   <br>
-	    <h3>thinking about: amnesia and pain, computer core memory, prosthetics, opiates... </h3>
-	    
-	    
-	    
-	    <br><br>
-	    
-	        
-	     <br>   <br>
-	    
-	     <br>   <br>
-	   
-	    <hr>
-      <br><br>
-   <h2>site tests (2020):</h2>
+      <h1> <a href="https://scoby.page/finding-his-iris-in-mine">Finding His Iris (in Mine)</a></h1>
+      <p>Thinking about vision, etching and interference patterns.</p>
 
-       <br>
+   <br> <br> <h1><a href="https://scoby.page/leak-filter-abstract-tear">Leak/Filter/Abstract Tear</a></h1>
+   <p>Thinking about magnetic liquids, eyewash and tears.</p>
 
-        <h2>
-     
-		
-	1.<a href="https://werker-archive-swan-divers.glitch.me/" target="_blank">Swan Divers (for Werker Collective)</a><br>		
-	2.<a href="https://painting-of-a-sunrise.glitch.me/" target="_blank">Painting-of-a-Sunrise (for the W.Dumbartonshire Archives)</a><br>	
-	3.<a href="https://kikivdh.github.io/copper-thru-ur-chest/" target="_blank">Coppers-Thru-Ur-Chest</a><br>
-	4.<a href="https://kikivdh.github.io/diarymachines/" target="_blank">Some Machines</a><br><h2>	
-		
-<br><br> 
-  <br><br><br><br>
-     
+   <br><br>
+    
+   
+  
+  </div>
 
-
-    </div>
-
-
-<br><br><br><br><br><br>
-		<a href = "index.html"><p2> <img src="yellow herondelle 002.svg"style="width:90px;height:auto;"> go back home</p2></a><br>
- <br><br><br>
-
-    </div>
-
-
-
-
-
-
-</body>
+  </body>
 
 </html>
