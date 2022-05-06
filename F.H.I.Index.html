@@ -1,0 +1,242 @@
+<html>
+<head>
+
+<title>[finding his iris]</title>
+
+  <meta name="description" content=" visual poetry">
+  
+
+  
+
+  
+    
+  <script>
+     var clicks = 0;
+     
+      function onClick() {
+        clicks += 1;
+        var message = "";
+        if(clicks==1)
+          { message = "apparition: an act of becoming visible; appearance;visibility.";}
+     else if(clicks==2)
+        {message ="apparition: a supernatural appearance of a person or thing, especially a ghost; a spectre or phantom;";}
+     else if(clicks==3)
+        {message ="bifurcation: a division into two branches; a forking.";}
+     else if(clicks==4)
+          {message = "bifurcation: the splitting of a main body into two parts.";}
+     else if(clicks==5)
+          {message = "body: the physical structure, including the bones, flesh, and organs, of a person or an animal. ";}
+     else if(clicks==6)
+          {message = "body: (computing) the name given to the main content present inside an html webpage.";}
+     else if(clicks==7)
+          {message = "cut: to make an opening, incision, or wound with a sharp-edged tool or object.";}
+     else if(clicks==8)
+          {message = "cut: (computing) a command that allows you to remove and manipulate a selection of data.";}
+     else if(clicks==9)
+          {message = "dissolution the action of formally ending an assembly, partnership, orofficial body.";}
+     else if(clicks==10)
+          {message = "dissolution: (chemistry) total liquefaction.";}
+     else if(clicks==11)
+          {message = "euphrasia: (botany) any of a genus of plants of the figwort family, having pale lavender flowers in leafy clusters: the common name refers to the plant's use in treating eye infections.";}
+     else if(clicks==12)
+          {message = "evaporation: the process of turning from liquid into vapour.";}
+     else if(clicks==13)
+          {message = "eye: the vertebrate organ of sight.";}
+     else if(clicks==14)
+          {message = "eyebright: (botany) common name for euphrasia.";}
+     else if(clicks==15)
+          {message = "ferrofluid: a fluid containing a magnetic suspension.";}
+     else if(clicks==16)
+          {message = "field: (physics) a field means that a physical quantity is assigned to every point in space.";}
+     else if(clicks==17)
+          {message = "field: (computing) a field is an area of a computer's memory or a program where data can be entered, edited, or stored.";}
+     else if(clicks==18)
+          {message = "field: to answer questions, especially difficult or unexpected ones:";}
+     else if(clicks==19)
+          {message = "filter: a device for removing solids from liquids or gases, or for removing particular types of light.";}
+     else if(clicks==20)
+     {message = "filter: (computing) a filter is pass-through code for selecting or removing a particular type of information.";}
+     else if(clicks==21)
+     {message = "inscribe: to write words in a book or carve them on an object.";}
+     else if(clicks==22)
+     {message = "inscribe: (geometry) to draw one figure inside of another, just touching but never crossing the outer edges.";}
+     else if(clicks==23)
+     {message = "interference: to come in or between, to intervene.";}
+     else if(clicks==24)
+     {message = "interference: (physics) the mutual action of two waves of the same frequency.";}
+     else if(clicks==25)
+     {message = "interference: (linguistics) the overlapping of two distinct languages.";}
+     else if(clicks==26)
+     {message = "iris: (botany) a tall plant that has blue, yellow, or white flowers and long, narrow leaves.";}
+     else if(clicks==27)
+     {message = "iris: the contractile,colored portion of the eye containing a circular opening, the pupil, in its center.";}
+     else if(clicks==28)
+     {message = "proxy: a person or thing that is acting or being used in the place of someone or something else.";}
+     else if(clicks==29)
+     {message = "proxy: (computing) server that processes requests between a client and another server.";}
+     else if(clicks==30)
+     {message = "saline: a liquid mixture of salt and pure water used to replace liquid lost from the body.";}
+     else if(clicks==31)
+     {message = "tear: to pull or be pulled apart or away from something else, or to cause this to happen to something.";}
+     else if(clicks==32)
+     {message = "tear: a drop of the saline, watery fluid secreted by the lacrimal glands in the eye";}
+     else if(clicks==33)
+     {message = "section: (anatomy) a slice of tissue, see: biopsy.";}
+     else if(clicks==34)
+     {message = "section: (biology) a division of a genus; a group of a species separated by some distinction from others of the same genus.";}
+     else if(clicks==35)
+     {message = "section: (architecture) a 'section drawing' shows a view of a structure as though its walls had been sliced open. ";}
+     else if(clicks==36)
+     {message = "...";}
+
+
+
+     else if(clicks>=46)
+          {message = " ";}
+        document.getElementById("message").innerHTML = message;
+          
+     
+      };
+</script>
+    
+<style type="text/css">
+
+body {
+   background-repeat: no-repeat;
+    background-color: #575d5d;
+    background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/15833786/original_caa4ec1b491a00e756a6fa0c5d31920d.jpg?1648650601?bc=0");
+  background-size: cover;
+  background-position: center;
+}
+    
+    
+#message {
+    height: 500px;
+    width: 800px;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -400px;
+    overflow-y: hidden;
+    text-align: center;
+    font-family: "Open Sans", Helvetica, Arial;
+    font-weight: bolder;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
+    paint-order: stroke fill;
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+#clicky {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    width: 800px;
+    height: 10px;
+    margin-left: -400px;
+    text-align: center;
+}
+    
+#credits {
+    text-align: center;
+    color: white;
+    font-family: Helvetica;
+    font-weight: normal;
+    -webkit-text-stroke: 0px black;
+    text-shadow: 0px 0px 0px #000000;
+    font-size: 24px;
+
+}
+
+#arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 24px;
+    opacity: .5;
+   }
+    
+   button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+}
+    
+a:link {
+    text-decoration: none;
+    color: rgb(6, 49, 129);
+
+}
+  
+a:visited {
+    text-decoration: none;
+    color: rgb(145, 185, 197);
+    text-shadow:2px 2px 5px cadetblue;
+
+}
+
+
+
+.circle {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 300%;
+        height: 300%;
+
+      }
+      
+      
+      ._1 {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+        /*border: 1px solid red;*/
+        box-shadow:  0 0 10px 10px #e7e5e7;
+        transition: 5s;
+
+        align-items: center;
+       
+        
+  
+      }
+      
+      ._1:hover {
+          width: 20vw;
+        height: 20vw;
+    background-position: center;
+    box-shadow:  0 0 10px 10px #a9bbc7;
+    align-items: center;
+    
+      }
+    
+</style>
+
+</head>
+
+<body>
+
+   
+    
+
+    
+
+    <div id="message"></div>
+    
+    <div id="clicky">
+        &nbsp;
+        <button type="button" id="buttonclick" onClick="onClick()">click</button>
+    </div>
+ 
+</body>
+
+</html>
